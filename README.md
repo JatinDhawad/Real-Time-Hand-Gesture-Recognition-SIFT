@@ -34,3 +34,97 @@ python train_model.py
 python realtime_predict.py
 
 Press q to exit.
+
+🧠 How It Works
+Step 1 — Feature Extraction (SIFT)
+
+Each gesture image is converted to grayscale.
+
+SIFT detects scale and rotation invariant keypoints.
+
+Local descriptors are extracted around each keypoint.
+
+Step 2 — Bag of Visual Words (BoVW)
+
+All descriptors from the dataset are clustered using KMeans.
+
+Each cluster center represents a “visual word”.
+
+Every image is converted into a histogram of visual word frequencies.
+
+Step 3 — Classification (SVM)
+
+Histograms are used as feature vectors.
+
+A Support Vector Machine (SVM) classifier is trained.
+
+During real-time detection, the histogram of the live frame is classified.
+
+📊 Model Details
+
+Feature Extractor: SIFT
+
+Clustering Algorithm: KMeans
+
+Number of Clusters: (e.g., 200 or 300)
+
+Classifier: Linear SVM
+
+Input: Live webcam frame (ROI-based detection)
+
+🎯 Key Advantages
+
+Robust to scale and rotation
+
+Works with limited dataset compared to deep learning
+
+Lightweight classical computer vision approach
+
+Real-time performance on CPU
+
+⚠ Limitations
+
+Performance depends on lighting conditions
+
+Background clutter may reduce accuracy
+
+Requires sufficient dataset variation
+
+Slower than ORB but more accurate
+
+📸 Sample Output
+
+You can add screenshots here later:
+
+(Insert screenshot of running system)
+🚀 Future Improvements
+
+Add skin color segmentation for better ROI extraction
+
+Implement majority voting across frames
+
+Increase dataset size for higher accuracy
+
+Replace SIFT with ORB for faster performance
+
+Convert to deep learning (CNN-based gesture recognition)
+
+📈 Performance
+
+Works best under good lighting
+
+Accuracy improves with more training images
+
+Best results achieved with:
+
+100+ images per gesture
+
+200–300 KMeans clusters
+
+Clean background
+
+👨‍💻 Author
+
+Jatin Dhawad
+B.Tech Computer Engineering
+Computer Vision Project
