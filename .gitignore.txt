@@ -1,4 +1,0 @@
-model.pkl
-vocabulary.pkl
-__pycache__/
-*.pyc
