@@ -25,17 +25,21 @@ train_model.py
 ## ⚙️ Installation
 
 ```bash
-pip install opencv-contrib-python numpy scikit-learn joblib▶️ How to Run
+pip install opencv-contrib-python numpy scikit-learn joblib
+▶️ How to Run
+
 1️⃣ Build Vocabulary
 python build_vocab.py
+
 2️⃣ Train Model
 python train_model.py
+
 3️⃣ Run Real-Time Prediction
 python realtime_predict.py
 
 Press q to exit.
 ```
-🧠 How It Works
+## 🧠 How It Works
 Step 1 — Feature Extraction (SIFT)
 
 Each gesture image is converted to grayscale.
@@ -60,7 +64,7 @@ A Support Vector Machine (SVM) classifier is trained.
 
 During real-time detection, the histogram of the live frame is classified.
 
-📊 Model Details
+## 📊 Model Details
 
 Feature Extractor: SIFT
 
@@ -72,7 +76,7 @@ Classifier: Linear SVM
 
 Input: Live webcam frame (ROI-based detection)
 
-🎯 Key Advantages
+## 🎯 Key Advantages
 
 Robust to scale and rotation
 
@@ -82,7 +86,7 @@ Lightweight classical computer vision approach
 
 Real-time performance on CPU
 
-⚠ Limitations
+## ⚠ Limitations
 
 Performance depends on lighting conditions
 
@@ -92,14 +96,14 @@ Requires sufficient dataset variation
 
 Slower than ORB but more accurate
 
-📸 Sample Output
+## 📸 Sample Output
 
 <img width="940" height="485" alt="image" src="https://github.com/user-attachments/assets/133dfcba-0e7d-434c-b6c5-0f8a0adfded9" />
 <img width="940" height="496" alt="image" src="https://github.com/user-attachments/assets/98eed341-9a67-44b3-b0e1-fdd7c6222921" />
 <img width="940" height="492" alt="image" src="https://github.com/user-attachments/assets/751e07e7-c3bc-4ddc-964f-cfa2b70a7ed1" />
 <img width="940" height="500" alt="image" src="https://github.com/user-attachments/assets/2dd1a6f9-493f-403f-8cbc-c10877e774d7" />
 
-🚀 Future Improvements
+## 🚀 Future Improvements
 
 Add skin color segmentation for better ROI extraction
 
@@ -111,7 +115,7 @@ Replace SIFT with ORB for faster performance
 
 Convert to deep learning (CNN-based gesture recognition)
 
-📈 Performance
+## 📈 Performance
 
 Works best under good lighting
 
@@ -125,7 +129,7 @@ Best results achieved with:
 
 Clean background
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Jatin Dhawad
 B.Tech Computer Engineering
