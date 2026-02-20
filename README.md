@@ -34,7 +34,7 @@ python train_model.py
 python realtime_predict.py
 
 Press q to exit.
-
+```
 🧠 How It Works
 Step 1 — Feature Extraction (SIFT)
 
@@ -94,9 +94,11 @@ Slower than ORB but more accurate
 
 📸 Sample Output
 
-You can add screenshots here later:
+<img width="940" height="485" alt="image" src="https://github.com/user-attachments/assets/133dfcba-0e7d-434c-b6c5-0f8a0adfded9" />
+<img width="940" height="496" alt="image" src="https://github.com/user-attachments/assets/98eed341-9a67-44b3-b0e1-fdd7c6222921" />
+<img width="940" height="492" alt="image" src="https://github.com/user-attachments/assets/751e07e7-c3bc-4ddc-964f-cfa2b70a7ed1" />
+<img width="940" height="500" alt="image" src="https://github.com/user-attachments/assets/2dd1a6f9-493f-403f-8cbc-c10877e774d7" />
 
-(Insert screenshot of running system)
 🚀 Future Improvements
 
 Add skin color segmentation for better ROI extraction
