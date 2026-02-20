@@ -15,11 +15,17 @@ The system extracts SIFT keypoints from hand gestures, converts them into visual
 
 ## 📂 Project Structure
 dataset/
+
 build_histogram.py
+
 build_vocab.py
+
 realtime_predict.py
+
 sift_features.py
+
 train_model.py
+
 ---
 
 ## ⚙️ Installation
@@ -132,5 +138,7 @@ Clean background
 ## 👨‍💻 Author
 
 Jatin Dhawad
+
 B.Tech Computer Engineering
+
 Computer Vision Project
